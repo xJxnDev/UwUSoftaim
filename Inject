@@ -10,7 +10,7 @@ local UICorner = Instance.new("UICorner")
 local Pass = Instance.new("TextBox")
 local TextButton = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Softaim = Instance.new("Frame")
 local Frame = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
 local TextButton_2 = Instance.new("TextButton")
@@ -28,31 +28,13 @@ local TextLabel_4 = Instance.new("TextLabel")
 local Fill = Instance.new("Frame")
 local TextButton_6 = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
-local UICorner_9 = Instance.new("UICorner")
 local TextLabel_5 = Instance.new("TextLabel")
-local TextLabel_6 = Instance.new("TextLabel")
-local TextButton_7 = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
 local MiscScroll = Instance.new("ScrollingFrame")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
 local TextLabel_7 = Instance.new("TextLabel")
-local Frame_2 = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
-local TextLabel_8 = Instance.new("TextLabel")
-local TextButton_8 = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
-local TextButton_9 = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
-local TextButton_10 = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
-local TextButton_11 = Instance.new("TextButton")
-local UICorner_16 = Instance.new("UICorner")
-local Softaim = Instance.new("Frame")
-local UICorner_17 = Instance.new("UICorner")
-local TextLabel_9 = Instance.new("TextLabel")
-local TextLabel_10 = Instance.new("TextLabel")
 local AimPart = Instance.new("StringValue")
-
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -61,14 +43,13 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 login.Name = "login"
 login.Parent = ScreenGui
 login.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-login.Position = UDim2.new(0.626809359, 0, 0.308087289, 0)
+login.Position = UDim2.new(0.36312148, 0, 0.214377403, 0)
 login.Size = UDim2.new(0, 327, 0, 406)
-login.Visible = false
 
 TextLabel.Parent = login
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(-0.00305810408, 0, 0.0911329985, 0)
+TextLabel.Position = UDim2.new(0, 0, 0.0935960561, 0)
 TextLabel.Size = UDim2.new(0, 327, 0, 43)
 TextLabel.Font = Enum.Font.GothamBold
 TextLabel.Text = "Login"
@@ -118,14 +99,18 @@ TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
-UIAspectRatioConstraint.Parent = ScreenGui
-UIAspectRatioConstraint.AspectRatio = 2.040
+Softaim.Name = "Softaim"
+Softaim.Parent = ScreenGui
+Softaim.Active = true
+Softaim.BackgroundColor3 = Color3.fromRGB(206, 0, 0)
+Softaim.Position = UDim2.new(0.0125865322, 0, 0.0386248939, 0)
+Softaim.Size = UDim2.new(0, 380, 0, 217)
+Softaim.Visible = false
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(182, 0, 0)
-Frame.Position = UDim2.new(0.0138626341, 0, 0.0253506657, 0)
-Frame.Size = UDim2.new(0, 373, 0, 222)
-Frame.ZIndex = 3
+Frame.Parent = Softaim
+Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Frame.Position = UDim2.new(0, 0, -0.00289066159, 0)
+Frame.Size = UDim2.new(0, 380, 0, 211)
 
 UICorner_2.CornerRadius = UDim.new(0.0199999996, 0)
 UICorner_2.Parent = Frame
@@ -159,9 +144,8 @@ SoftaimScroll.Parent = Frame
 SoftaimScroll.Active = true
 SoftaimScroll.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 SoftaimScroll.BorderSizePixel = 0
-SoftaimScroll.Position = UDim2.new(0.0178359374, 0, 0.376126051, 0)
-SoftaimScroll.Size = UDim2.new(0, 358, 0, 124)
-SoftaimScroll.CanvasSize = UDim2.new(0, 0, 4, 0)
+SoftaimScroll.Position = UDim2.new(0.0204675365, 0, 0.378477842, 0)
+SoftaimScroll.Size = UDim2.new(0, 366, 0, 124)
 
 UICorner_5.CornerRadius = UDim.new(0.0500000007, 0)
 UICorner_5.Parent = SoftaimScroll
@@ -169,7 +153,7 @@ UICorner_5.Parent = SoftaimScroll
 TextLabel_3.Parent = SoftaimScroll
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(-0.0225846767, 0, 0.0103408452, 0)
+TextLabel_3.Position = UDim2.new(-0.0225846767, 0, 0.0281133577, 0)
 TextLabel_3.Size = UDim2.new(0, 161, 0, 33)
 TextLabel_3.Font = Enum.Font.GothamBold
 TextLabel_3.Text = "Softaim"
@@ -180,7 +164,7 @@ TextLabel_3.TextWrapped = true
 
 TextButton_4.Parent = SoftaimScroll
 TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-TextButton_4.Position = UDim2.new(0.863387942, 0, 0.0122351069, 0)
+TextButton_4.Position = UDim2.new(0.863387942, 0, 0.0228986144, 0)
 TextButton_4.Size = UDim2.new(0, 32, 0, 31)
 TextButton_4.Font = Enum.Font.SourceSans
 TextButton_4.Text = ""
@@ -192,7 +176,7 @@ UICorner_6.Parent = TextButton_4
 
 TextButton_5.Parent = SoftaimScroll
 TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-TextButton_5.Position = UDim2.new(0.863387942, 0, 0.0572588071, 0)
+TextButton_5.Position = UDim2.new(0.863387942, 0, 0.136642694, 0)
 TextButton_5.Size = UDim2.new(0, 32, 0, 31)
 TextButton_5.Font = Enum.Font.SourceSans
 TextButton_5.Text = ""
@@ -205,7 +189,7 @@ UICorner_7.Parent = TextButton_5
 TextLabel_4.Parent = SoftaimScroll
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(-0.0225846749, 0, 0.0561418906, 0)
+TextLabel_4.Position = UDim2.new(-0.000726751983, 0, 0.134340942, 0)
 TextLabel_4.Size = UDim2.new(0, 161, 0, 27)
 TextLabel_4.Font = Enum.Font.GothamBold
 TextLabel_4.Text = "Show FOV"
@@ -219,16 +203,16 @@ Fill.Parent = SoftaimScroll
 Fill.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 Fill.BorderColor3 = Color3.fromRGB(200, 0, 0)
 Fill.BorderSizePixel = 4
-Fill.Position = UDim2.new(0.580383182, 0, 0.112774357, 0)
-Fill.Size = UDim2.new(0, 135, 0, 7)
+Fill.Position = UDim2.new(0.645956874, 0, 0.243371829, 0)
+Fill.Size = UDim2.new(0, 135, 0, 3)
 
 TextButton_6.Parent = Fill
 TextButton_6.AnchorPoint = Vector2.new(0.5, 0.5)
 TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_6.BorderColor3 = Color3.fromRGB(200, 0, 0)
 TextButton_6.BorderSizePixel = 4
-TextButton_6.Position = UDim2.new(0.041129671, 0, 0.48522076, 0)
-TextButton_6.Size = UDim2.new(0, 11, 0, 38)
+TextButton_6.Position = UDim2.new(0.0163704157, 0, 0.243000001, 0)
+TextButton_6.Size = UDim2.new(0, 6, 0, 18)
 TextButton_6.Font = Enum.Font.SourceSans
 TextButton_6.Text = ""
 TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -237,13 +221,10 @@ TextButton_6.TextSize = 14.000
 UICorner_8.CornerRadius = UDim.new(0.400000006, 0)
 UICorner_8.Parent = TextButton_6
 
-UICorner_9.CornerRadius = UDim.new(0.5, 0)
-UICorner_9.Parent = Fill
-
 TextLabel_5.Parent = SoftaimScroll
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(0.0183989312, 0, 0.101631507, 0)
+TextLabel_5.Position = UDim2.new(0.0211311709, 0, 0.213005915, 0)
 TextLabel_5.Size = UDim2.new(0, 152, 0, 26)
 TextLabel_5.Font = Enum.Font.GothamBold
 TextLabel_5.Text = "FOV Radius"
@@ -251,30 +232,6 @@ TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.TextScaled = true
 TextLabel_5.TextSize = 14.000
 TextLabel_5.TextWrapped = true
-
-TextLabel_6.Parent = SoftaimScroll
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.Position = UDim2.new(0, 0, 0.183615148, 0)
-TextLabel_6.Size = UDim2.new(0, 185, 0, 47)
-TextLabel_6.Font = Enum.Font.GothamBold
-TextLabel_6.Text = "Softaim Aimpart Menu"
-TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.TextScaled = true
-TextLabel_6.TextSize = 14.000
-TextLabel_6.TextWrapped = true
-
-TextButton_7.Parent = SoftaimScroll
-TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-TextButton_7.Position = UDim2.new(0.863387883, 0, 0.182851225, 0)
-TextButton_7.Size = UDim2.new(0, 32, 0, 31)
-TextButton_7.Font = Enum.Font.SourceSans
-TextButton_7.Text = ""
-TextButton_7.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextButton_7.TextSize = 14.000
-
-UICorner_10.CornerRadius = UDim.new(0, 50)
-UICorner_10.Parent = TextButton_7
 
 MiscScroll.Name = "MiscScroll"
 MiscScroll.Parent = Frame
@@ -285,126 +242,35 @@ MiscScroll.Position = UDim2.new(0.0199999996, 0, 0.377999991, 0)
 MiscScroll.Size = UDim2.new(0, 366, 0, 124)
 MiscScroll.Visible = false
 
-UICorner_11.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_11.Parent = MiscScroll
+UICorner_9.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_9.Parent = MiscScroll
 
-TextLabel_7.Parent = MiscScroll
+TextLabel_6.Parent = MiscScroll
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.0516276844, 0, 0.015969336, 0)
+TextLabel_6.Size = UDim2.new(0, 269, 0, 79)
+TextLabel_6.Font = Enum.Font.GothamBold
+TextLabel_6.Text = "Made by _UwU_#2430 and Feesty#9781"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0.0199999996, 0)
+UICorner_10.Parent = Softaim
+
+TextLabel_7.Parent = Softaim
 TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.Position = UDim2.new(0.0516276844, 0, 0.015969336, 0)
-TextLabel_7.Size = UDim2.new(0, 269, 0, 79)
+TextLabel_7.Position = UDim2.new(0.0417266861, 0, 0.0276497696, 0)
+TextLabel_7.Size = UDim2.new(0, 357, 0, 33)
 TextLabel_7.Font = Enum.Font.GothamBold
-TextLabel_7.Text = "Made by _UwU_#2430 and Feesty#9781"
+TextLabel_7.Text = "UwU Softaim"
 TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.TextScaled = true
 TextLabel_7.TextSize = 14.000
 TextLabel_7.TextWrapped = true
-
-Frame_2.Parent = Frame
-Frame_2.BackgroundColor3 = Color3.fromRGB(220, 0, 0)
-Frame_2.Position = UDim2.new(1.13421047, 0, 0.04265403, 0)
-Frame_2.Size = UDim2.new(0, 254, 0, 207)
-Frame_2.Visible = false
-
-UICorner_12.CornerRadius = UDim.new(0.0299999993, 0)
-UICorner_12.Parent = Frame_2
-
-TextLabel_8.Parent = Frame_2
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.Size = UDim2.new(0, 254, 0, 38)
-TextLabel_8.Font = Enum.Font.GothamBold
-TextLabel_8.Text = "Aimpart: "
-TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextScaled = true
-TextLabel_8.TextSize = 14.000
-TextLabel_8.TextWrapped = true
-
-TextButton_8.Parent = Frame_2
-TextButton_8.BackgroundColor3 = Color3.fromRGB(208, 0, 0)
-TextButton_8.Position = UDim2.new(0.106299222, 0, 0.314009666, 0)
-TextButton_8.Size = UDim2.new(0, 200, 0, 50)
-TextButton_8.Font = Enum.Font.SourceSans
-TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_8.TextSize = 14.000
-
-UICorner_13.CornerRadius = UDim.new(0.0799999982, 0)
-UICorner_13.Parent = TextButton_8
-
-TextButton_9.Parent = TextButton_8
-TextButton_9.BackgroundColor3 = Color3.fromRGB(234, 0, 0)
-TextButton_9.Position = UDim2.new(0, 0, -0.00879211444, 0)
-TextButton_9.Size = UDim2.new(0, 199, 0, 44)
-TextButton_9.Font = Enum.Font.GothamBold
-TextButton_9.Text = "Head"
-TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_9.TextScaled = true
-TextButton_9.TextSize = 14.000
-TextButton_9.TextWrapped = true
-
-UICorner_14.CornerRadius = UDim.new(0.0799999982, 0)
-UICorner_14.Parent = TextButton_9
-
-TextButton_10.Parent = Frame_2
-TextButton_10.BackgroundColor3 = Color3.fromRGB(208, 0, 0)
-TextButton_10.Position = UDim2.new(0.106299222, 0, 0.632850289, 0)
-TextButton_10.Size = UDim2.new(0, 200, 0, 50)
-TextButton_10.Font = Enum.Font.SourceSans
-TextButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_10.TextSize = 14.000
-
-UICorner_15.CornerRadius = UDim.new(0.0799999982, 0)
-UICorner_15.Parent = TextButton_10
-
-TextButton_11.Parent = TextButton_10
-TextButton_11.BackgroundColor3 = Color3.fromRGB(234, 0, 0)
-TextButton_11.Position = UDim2.new(0, 0, -0.00879211444, 0)
-TextButton_11.Size = UDim2.new(0, 199, 0, 44)
-TextButton_11.Font = Enum.Font.GothamBold
-TextButton_11.Text = "Chest"
-TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_11.TextScaled = true
-TextButton_11.TextSize = 14.000
-TextButton_11.TextWrapped = true
-
-UICorner_16.CornerRadius = UDim.new(0.0799999982, 0)
-UICorner_16.Parent = TextButton_11
-
-Softaim.Name = "Softaim"
-Softaim.Parent = Frame
-Softaim.Active = true
-Softaim.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Softaim.Position = UDim2.new(0, 0, -0.00402921392, 0)
-Softaim.Size = UDim2.new(0, 373, 0, 217)
-Softaim.ZIndex = 0
-
-UICorner_17.CornerRadius = UDim.new(0.0199999996, 0)
-UICorner_17.Parent = Softaim
-
-TextLabel_9.Parent = Softaim
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.Position = UDim2.new(0.0206740592, 0, 0.0368663594, 0)
-TextLabel_9.Size = UDim2.new(0, 357, 0, 31)
-TextLabel_9.Font = Enum.Font.GothamBold
-TextLabel_9.Text = "UwU Softaim"
-TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.TextScaled = true
-TextLabel_9.TextSize = 14.000
-TextLabel_9.TextWrapped = true
-
-TextLabel_10.Parent = Softaim
-TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.BackgroundTransparency = 1.000
-TextLabel_10.Position = UDim2.new(0.57631582, 0, 0.207373276, 0)
-TextLabel_10.Size = UDim2.new(0, 135, 0, 34)
-TextLabel_10.Font = Enum.Font.GothamBold
-TextLabel_10.Text = "Press Insert to Open/Close Menu"
-TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.TextScaled = true
-TextLabel_10.TextSize = 14.000
-TextLabel_10.TextWrapped = true
-
 
 AimPart.Name = "AimPart"
 AimPart.Parent = SoftaimScroll
@@ -412,13 +278,13 @@ AimPart.Value = "Head"
 
 -- Scripts:
 
-local function SPUK_fake_script() -- TextButton.LocalScript 
+local function MVKNJL_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Softaim = "hKBKrsJMbkGhcNoQNFjt"
 	local plr = game.Players.LocalPlayer
 	local camera = game.Workspace.CurrentCamera
-	local UIS = game:GetService("UserInputService")
+	local UIS = game.UserInputService
 	local mouse = plr:GetMouse()
 	local LOCKON = "Head"
 	_G.aim = false
@@ -435,19 +301,20 @@ local function SPUK_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SPUK_fake_script)()
-local function QROLKFD_fake_script() -- TextButton_2.Script 
+coroutine.wrap(MVKNJL_fake_script)()
+local function FTZY_fake_script() -- TextButton_2.Script 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Parent.SoftaimScroll.Visible == false then
 			script.Parent.Parent.SoftaimScroll.Visible = true
+			script.Parent.Parent.VisualsScroll.Visible = false
 			script.Parent.Parent.MiscScroll.Visible = false
 		end
 	end)
 end
-coroutine.wrap(QROLKFD_fake_script)()
-local function OOTFE_fake_script() -- TextButton_3.Script 
+coroutine.wrap(FTZY_fake_script)()
+local function RTXLXJG_fake_script() -- TextButton_3.Script 
 	local script = Instance.new('Script', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -458,95 +325,230 @@ local function OOTFE_fake_script() -- TextButton_3.Script
 		end
 	end)
 end
-coroutine.wrap(OOTFE_fake_script)()
-local function ODCKGJ_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(RTXLXJG_fake_script)()
+local function LBUWWY_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
-	_G.aimbot = false
-	local camera = game.Workspace.CurrentCamera
-	local localplayer = game:GetService("Players").LocalPlayer
+	local Softaim = "hKBKrsJMbkGhcNoQNFjt"
 	local plr = game.Players.LocalPlayer
 	local camera = game.Workspace.CurrentCamera
-	local UIS = game:GetService("UserInputService")
+	local UIS = game.UserInputService
 	local mouse = plr:GetMouse()
-	local LOCKON = nil
-	local TS = game:GetService("TweenService")
-	local tweenInfo = TweenInfo.new(0.25)
-	_G.aimbot = false
+	local LOCKON = "Head"
+	visile = false
+	local Bottom = Drawing.new("Line")
+	Bottom.Visible = false
+	Bottom.From = Vector2.new(0, 0)
+	Bottom.To = Vector2.new(200, 200)
+	Bottom.Color = Color3.fromRGB(255, 0, 0)
+	Bottom.Thickness = 2
+	Bottom.Transparency = 1
+	
+	local Left = Drawing.new("Line")
+	Left.Visible = false
+	Left.From = Vector2.new(0, 0)
+	Left.To = Vector2.new(200, 200)
+	Left.Color = Color3.fromRGB(255, 0, 0)
+	Left.Thickness = 2
+	Left.Transparency = 1
+	
+	local Right = Drawing.new("Line")
+	Right.Visible = false
+	Right.From = Vector2.new(0, 0)
+	Right.To = Vector2.new(200, 200)
+	Right.Color = Color3.fromRGB(255, 0, 0)
+	Right.Thickness = 2
+	Right.Transparency = 1
+	local Top = Drawing.new("Line")
+	Top.Visible = false
+	Top.From = Vector2.new(0, 0)
+	Top.To = Vector2.new(200, 200)
+	Top.Color = Color3.fromRGB(255, 0, 0)
+	Top.Thickness = 2
+	Top.Transparency = 1
+	for i, v in pairs(game.Players:GetChildren()) do
+		
+	function ESP()
+		local connection
+		connection = game:GetService("RunService").RenderStepped:Connect(function()
+			if v.Character ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v.Name ~= plr.Name  and v.Character.Humanoid.Health > 0 then 
+				local ScreenPos, OnScreen = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+				if OnScreen then
+					local Scale = v.Character.Head.Size.Y/2
+					local Size = Vector3.new(2, 3, 0) * (Scale * 2)
+					local humpos = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+					local TL = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, Size.Y, 0)).p)
+					local TR = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, Size.Y, 0)).p)
+					local BL = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, -Size.Y, 0)).p)
+					local BR = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, -Size.Y, 0)).p)
+	
+					Top.From = Vector2.new(TL.X, TL.Y)
+					Top.To = Vector2.new(TR.X, TR.Y)
+	
+					Left.From = Vector2.new(TL.X, TL.Y)
+					Left.To = Vector2.new(BL.X, BL.Y)
+	
+					Right.From = Vector2.new(TR.X, TR.Y)
+					Right.To = Vector2.new(BR.X, BR.Y)
+	
+					Bottom.From = Vector2.new(BL.X, BL.Y)
+					Bottom.To = Vector2.new(BR.X, BR.Y)
+	
+					if v.TeamColor == plr.TeamColor then
+						Top.Color = Color3.fromRGB(0, 255, 0)
+						Left.Color = Color3.fromRGB(0, 255, 0)
+						Bottom.Color = Color3.fromRGB(0, 255, 0)
+						Right.Color = Color3.fromRGB(0, 255, 0)
+					else 
+						Top.Color = Color3.fromRGB(255, 0, 0)
+						Left.Color = Color3.fromRGB(255, 0, 0)
+						Bottom.Color = Color3.fromRGB(255, 0, 0)
+						Right.Color = Color3.fromRGB(255, 0, 0)
+					end
+	
+					Top.Visible = true
+					Left.Visible = true
+					Bottom.Visible = true
+					Right.Visible = true
+				else 
+					Top.Visible = false
+					Left.Visible = false
+					Bottom.Visible = false
+					Right.Visible = false
+				end
+			else 
+				Top.Visible = false
+				Left.Visible = false
+				Bottom.Visible = false
+				Right.Visible = false
+				if game.Players:FindFirstChild(v.Name) == nil then
+					connection:Disconnect()
+				end
+			end
+		end)
+	end
+	coroutine.wrap(ESP)()
+	end
+	
 	
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if _G.aimbot == false then
-			_G.aimbot = true
+		if visile == false then
+			visile = true
+			
 			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
-			function closestplayer()
-				local dist = math.huge -- math.huge means a really large number, 1M+.
-				local target = nil --- nil means no value
-				for i,v in pairs (game:GetService("Players"):GetPlayers()) do
-					if v ~= localplayer then
-						if v.Character and v.Character:FindFirstChild("Head") and v.TeamColor ~= localplayer.TeamColor and _G.aimbot and v.Character.Humanoid.Health > 0 then --- creating the checks
-							local magnitude = (v.Character[LOCKON].Position - localplayer.Character[LOCKON].Position).magnitude
-							local plrpos, OnScreen = camera:WorldToViewportPoint(v.Character[LOCKON].Position)
-							local distance = math.sqrt(math.pow(mouse.X - plrpos.X, 2), math.pow(mouse.Y - plrpos.Y, 2))
-							local fovdistance = math.sqrt(math.pow(FOV.Position.X - plrpos.X, 2) + math.pow(FOV.Position.Y - plrpos.Y, 2))
-							if fovdistance <= FOV.Radius then
-							if magnitude < dist then
-								dist = magnitude
-								target = v
-							  end
-	                        end
+			
+			local plr = game.Players.LocalPlayer
+			local camera = game.Workspace.CurrentCamera
+	
+			
+				
+	
+			
+	
+			
+	
+			game.Players.PlayerAdded:Connect(function(newplr) --Parameter gets the new player that has been added
+				local Top = Drawing.new("Line")
+				Top.Visible = false
+				Top.From = Vector2.new(0, 0)
+				Top.To = Vector2.new(200, 200)
+				Top.Color = Color3.fromRGB(255, 0, 0)
+				Top.Thickness = 2
+				Top.Transparency = 1
+	
+				local Bottom = Drawing.new("Line")
+				Bottom.Visible = false
+				Bottom.From = Vector2.new(0, 0)
+				Bottom.To = Vector2.new(200, 200)
+				Bottom.Color = Color3.fromRGB(255, 0, 0)
+				Bottom.Thickness = 2
+				Bottom.Transparency = 1
+	
+				local Left = Drawing.new("Line")
+				Left.Visible = false
+				Left.From = Vector2.new(0, 0)
+				Left.To = Vector2.new(200, 200)
+				Left.Color = Color3.fromRGB(255, 0, 0)
+				Left.Thickness = 2
+				Left.Transparency = 1
+	
+				local Right = Drawing.new("Line")
+				Right.Visible = false
+				Right.From = Vector2.new(0, 0)
+				Right.To = Vector2.new(200, 200)
+				Right.Color = Color3.fromRGB(255, 0, 0)
+				Right.Thickness = 2
+				Right.Transparency = 1
+	
+				function ESP()
+					local connection
+					connection = game:GetService("RunService").RenderStepped:Connect(function()
+						if newplr.Character ~= nil and newplr.Character:FindFirstChild("HumanoidRootPart") ~= nil and newplr.Name ~= plr.Name  and newplr.Character.Humanoid.Health > 0 then
+							local ScreenPos, OnScreen = camera:WorldToViewportPoint(newplr.Character.HumanoidRootPart.Position)
+							if OnScreen then
+								local Scale = newplr.Character.Head.Size.Y/2
+								local Size = Vector3.new(2, 3, 0) * (Scale * 2)
+								local humpos = camera:WorldToViewportPoint(newplr.Character.HumanoidRootPart.Position)
+								local TL = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, Size.Y, 0)).p)
+								local TR = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, Size.Y, 0)).p)
+								local BL = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, -Size.Y, 0)).p)
+								local BR = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, -Size.Y, 0)).p)
+	
+								Top.From = Vector2.new(TL.X, TL.Y)
+								Top.To = Vector2.new(TR.X, TR.Y)
+	
+								Left.From = Vector2.new(TL.X, TL.Y)
+								Left.To = Vector2.new(BL.X, BL.Y)
+	
+								Right.From = Vector2.new(TR.X, TR.Y)
+								Right.To = Vector2.new(BR.X, BR.Y)
+	
+								Bottom.From = Vector2.new(BL.X, BL.Y)
+								Bottom.To = Vector2.new(BR.X, BR.Y)
+	
+								if newplr.TeamColor == plr.TeamColor then
+									Top.Color = Color3.fromRGB(0, 255, 0)
+									Left.Color = Color3.fromRGB(0, 255, 0)
+									Bottom.Color = Color3.fromRGB(0, 255, 0)
+									Right.Color = Color3.fromRGB(0, 255, 0)
+								else 
+									Top.Color = Color3.fromRGB(255, 0, 0)
+									Left.Color = Color3.fromRGB(255, 0, 0)
+									Bottom.Color = Color3.fromRGB(255, 0, 0)
+									Right.Color = Color3.fromRGB(255, 0, 0)
+								end
+	
+								Top.Visible = true
+								Left.Visible = true
+								Bottom.Visible = true
+								Right.Visible = true
+						 end
+						
+							if game.Players:FindFirstChild(newplr.Name) == nil then
+								connection:Disconnect()
+							end
 						end
-					end
+					end)
 				end
-				return target
-			end
-	
+				coroutine.wrap(ESP)()
+			end)
 		else
-			_G.aimbot = false
+			visile = false
 			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,0)
+			Top.Visible = true
+			Left.Visible = true
+			Bottom.Visible = true
+			Right.Visible = true
 		end
 	end)
 	
-	local settings = {
-		keybind = Enum.UserInputType.MouseButton2
-	}
 	
-	local UIS = game:GetService("UserInputService")
-	local aiming = false --- this toggle will make it so we lock on to the person when we press our keybind
 	
-	UIS.InputBegan:Connect(function(inp)
-		if inp.UserInputType == settings.keybind then
-			aiming = true
-		end
-	end)
-	
-	UIS.InputEnded:Connect(function(inp)
-		if inp.UserInputType == settings.keybind then ---- when we stop pressing the keybind it would unlock off the player
-			aiming = false
-		end
-	end)
-	
-	game:GetService("RunService").RenderStepped:Connect(function()
-		if aiming then
-			while wait() do
-				local tween = TS:Create(camera, tweenInfo, {CFrame = CFrame.new(camera.CFrame.Position,closestplayer().Character[LOCKON].Position)}) -- locks into the HEAD
-				tween:Play()
-				if aiming == false then tween:Cancel() return end
-			end
-		end
-	end)
-	
-	while wait() do
-		if AimPart.Value == "Head" then
-			LOCKON = "Head"
-		elseif AimPart.Value == "HumanoidRootPart" then
-			LOCKON = "LowerTorso"
-		end
-	end
 	
 end
-coroutine.wrap(ODCKGJ_fake_script)()
-local function NDCTGKM_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(LBUWWY_fake_script)()
+local function KHYP_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	visible = false
@@ -567,17 +569,16 @@ local function NDCTGKM_fake_script() -- TextButton_5.LocalScript
 			visible = false
 			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,0)
 			FOV.Visible = false
-	        FOV.Radius = Precent*1000
+			FOV.Radius = Precent*1000
 		end	
 	end)
 end
-coroutine.wrap(NDCTGKM_fake_script)()
-local function MCGHE_fake_script() -- Fill.LocalScript 
+coroutine.wrap(KHYP_fake_script)()
+local function UZTILJJ_fake_script() -- Fill.LocalScript 
 	local script = Instance.new('LocalScript', Fill)
 
 	local UserInputService = game:GetService("UserInputService")
 	local Dragging = false
-	
 	
 	script.Parent.TextButton.MouseButton1Down:Connect(function()
 		Dragging = true
@@ -586,7 +587,7 @@ local function MCGHE_fake_script() -- Fill.LocalScript
 	UserInputService.InputChanged:Connect(function()
 		if Dragging then
 			local MousePos = UserInputService:GetMouseLocation()+Vector2.new(0,36)
-		local RelPos = MousePos-script.Parent.AbsolutePosition
+			local RelPos = MousePos-script.Parent.AbsolutePosition
 			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
 			script.Parent.TextButton.Position = UDim2.new(Precent,0,0.5,0)
 			FOV.Radius = Precent*1000
@@ -599,140 +600,10 @@ local function MCGHE_fake_script() -- Fill.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MCGHE_fake_script)()
-local function DNDKA_fake_script() -- TextButton_7.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_7)
-
-	visible = false
-	local camera = workspace.CurrentCamera
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if visible == false then
-			visible = true
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
-			script.Parent.Parent.Parent.Frame.Visible = true
-		else
-			visible = false
-			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,0)
-			script.Parent.Parent.Parent.Frame.Visible = false
-		end	
-	end)
-end
-coroutine.wrap(DNDKA_fake_script)()
-local function PNDCDPE_fake_script() -- SoftaimScroll.Script 
-	local script = Instance.new('Script', SoftaimScroll)
-
-	local s = Instance.new("StringValue",script.Parent)
-	s.Name = "AimPart"
-	s.Value = "Head"
-end
-coroutine.wrap(PNDCDPE_fake_script)()
-local function IKFPKM_fake_script() -- TextLabel_8.Script 
-	local script = Instance.new('Script', TextLabel_8)
-
-	while wait() do
-		script.Parent.Text = script.Parent.Parent.Parent.SoftaimScroll.AimPart.Value
-	end
-end
-coroutine.wrap(IKFPKM_fake_script)()
-local function QCYGV_fake_script() -- TextButton_9.Script 
-	local script = Instance.new('Script', TextButton_9)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent.SoftaimScroll.AimPart.Value = "Head"
-	end)
-end
-coroutine.wrap(QCYGV_fake_script)()
-local function QTTNYM_fake_script() -- TextButton_8.Script 
-	local script = Instance.new('Script', TextButton_8)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.SoftaimScroll.AimPart.Value = "Head"
-	end)
-end
-coroutine.wrap(QTTNYM_fake_script)()
-local function GQJYPFU_fake_script() -- TextButton_11.Script 
-	local script = Instance.new('Script', TextButton_11)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent.SoftaimScroll.AimPart.Value = "HumanoidRootPart"
-	end)
-end
-coroutine.wrap(GQJYPFU_fake_script)()
-local function CURT_fake_script() -- TextButton_10.Script 
-	local script = Instance.new('Script', TextButton_10)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.SoftaimScroll.AimPart.Value = "HumanoidRootPart"
-	end)
-end
-coroutine.wrap(CURT_fake_script)()
-local function PGIKLVX_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); -- drag speed
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(PGIKLVX_fake_script)()
-local function BXWXVU_fake_script() -- Softaim.LocalScript 
+coroutine.wrap(UZTILJJ_fake_script)()
+local function OXNLNGA_fake_script() -- Softaim.LocalScript 
 	local script = Instance.new('LocalScript', Softaim)
 
 	
 end
-coroutine.wrap(BXWXVU_fake_script)()
-local function OWTLY_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-
-	local plr = game.Players.LocalPlayer
-	local UserInputService = game:GetService("UserInputService")
-	
-	UserInputService.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.Keyboard then
-			if input.KeyCode == Enum.KeyCode.Insert then
-				if script.Parent.Visible == false then
-					script.Parent.Visible = true
-				else
-					script.Parent.Visible = false
-				end
-			end
-		end
-	end)
-end
-coroutine.wrap(OWTLY_fake_script)()
+coroutine.wrap(OXNLNGA_fake_script)()
