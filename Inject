@@ -34,7 +34,7 @@ local UICorner_9 = Instance.new("UICorner")
 local TextLabel_6 = Instance.new("TextLabel")
 local UICorner_10 = Instance.new("UICorner")
 local TextLabel_7 = Instance.new("TextLabel")
-local AimPart = Instance.new("StringValue")
+
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -272,13 +272,9 @@ TextLabel_7.TextScaled = true
 TextLabel_7.TextSize = 14.000
 TextLabel_7.TextWrapped = true
 
-AimPart.Name = "AimPart"
-AimPart.Parent = SoftaimScroll
-AimPart.Value = "Head"
-
 -- Scripts:
 
-local function MVKNJL_fake_script() -- TextButton.LocalScript 
+local function BDINNXW_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Softaim = "hKBKrsJMbkGhcNoQNFjt"
@@ -301,8 +297,8 @@ local function MVKNJL_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MVKNJL_fake_script)()
-local function FTZY_fake_script() -- TextButton_2.Script 
+coroutine.wrap(BDINNXW_fake_script)()
+local function YJNO_fake_script() -- TextButton_2.Script 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -313,8 +309,8 @@ local function FTZY_fake_script() -- TextButton_2.Script
 		end
 	end)
 end
-coroutine.wrap(FTZY_fake_script)()
-local function RTXLXJG_fake_script() -- TextButton_3.Script 
+coroutine.wrap(YJNO_fake_script)()
+local function IYUFS_fake_script() -- TextButton_3.Script 
 	local script = Instance.new('Script', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -325,8 +321,8 @@ local function RTXLXJG_fake_script() -- TextButton_3.Script
 		end
 	end)
 end
-coroutine.wrap(RTXLXJG_fake_script)()
-local function LBUWWY_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(IYUFS_fake_script)()
+local function TAVMWMA_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local Softaim = "hKBKrsJMbkGhcNoQNFjt"
@@ -547,8 +543,8 @@ local function LBUWWY_fake_script() -- TextButton_4.LocalScript
 	
 	
 end
-coroutine.wrap(LBUWWY_fake_script)()
-local function KHYP_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(TAVMWMA_fake_script)()
+local function AJHUGC_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	visible = false
@@ -573,8 +569,8 @@ local function KHYP_fake_script() -- TextButton_5.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(KHYP_fake_script)()
-local function UZTILJJ_fake_script() -- Fill.LocalScript 
+coroutine.wrap(AJHUGC_fake_script)()
+local function HNYW_fake_script() -- Fill.LocalScript 
 	local script = Instance.new('LocalScript', Fill)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -600,10 +596,10 @@ local function UZTILJJ_fake_script() -- Fill.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UZTILJJ_fake_script)()
-local function OXNLNGA_fake_script() -- Softaim.LocalScript 
+coroutine.wrap(HNYW_fake_script)()
+local function TJJD_fake_script() -- Softaim.LocalScript 
 	local script = Instance.new('LocalScript', Softaim)
 
 	
 end
-coroutine.wrap(OXNLNGA_fake_script)()
+coroutine.wrap(TJJD_fake_script)()
